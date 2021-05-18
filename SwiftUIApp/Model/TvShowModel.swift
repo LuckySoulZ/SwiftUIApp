@@ -12,6 +12,7 @@ import Foundation
  Summary: We took the variables we needed from the json and made it possible to conform to different protocols to facilitate their use.
 */
 struct TvShowModel: Codable, Equatable, Hashable, Identifiable {
+    // MARK: - PROPERTIES
     var id: Int
     var url: String
     var name, language: String

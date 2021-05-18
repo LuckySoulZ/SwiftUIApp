@@ -23,10 +23,10 @@ struct NetworkImageView: View {
 
     var body: some View {
         Image(uiImage: UIImage(data: remoteImageURL.data) ?? UIImage())
+            .renderingMode(.original)
             .resizable()
-            .clipShape(Circle())
-            .overlay(Circle().stroke(Color.black, lineWidth: 3.0))
-            .frame(width: 120.0, height: 120.0)
+            .scaledToFit()
+            .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.15), radius: 8, x: 6, y: 8)
     }
 }
 
@@ -45,6 +45,6 @@ class RemoteImageURL: ObservableObject {
 
             DispatchQueue.main.async { self.data = data }
 
-            }.resume()
+        }.resume()
     }
 }

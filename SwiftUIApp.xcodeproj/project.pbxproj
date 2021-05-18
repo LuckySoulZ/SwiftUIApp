@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		842C0E89264AE72D00BC1890 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C0E88264AE72D00BC1890 /* AppDelegate.swift */; };
 		842C0E8B264AE72D00BC1890 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C0E8A264AE72D00BC1890 /* SceneDelegate.swift */; };
-		842C0E8D264AE72D00BC1890 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842C0E8C264AE72D00BC1890 /* MainView.swift */; };
 		842C0E8F264AE73000BC1890 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842C0E8E264AE73000BC1890 /* Assets.xcassets */; };
 		842C0E92264AE73000BC1890 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842C0E91264AE73000BC1890 /* Preview Assets.xcassets */; };
 		842C0E95264AE73000BC1890 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842C0E93264AE73000BC1890 /* LaunchScreen.storyboard */; };
@@ -18,14 +17,22 @@
 		8440613C264F0BFD0002366B /* NetworkImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440613B264F0BFD0002366B /* NetworkImageViewModel.swift */; };
 		84406142264F0D960002366B /* UIScreen+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84406141264F0D960002366B /* UIScreen+Extension.swift */; };
 		84406145264F0DDF0002366B /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84406144264F0DDF0002366B /* String+Extension.swift */; };
-		84406149264F0E1C0002366B /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84406148264F0E1C0002366B /* TextView.swift */; };
+		8447DA4E26542F62004E7B41 /* TvShowDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447DA4D26542F62004E7B41 /* TvShowDetailsView.swift */; };
+		8447DA5326543034004E7B41 /* TvShowHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447DA5226543034004E7B41 /* TvShowHeaderView.swift */; };
+		8447DA56265431C0004E7B41 /* TvShowRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447DA55265431C0004E7B41 /* TvShowRowView.swift */; };
+		8447DA59265433EF004E7B41 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447DA58265433EF004E7B41 /* SettingsView.swift */; };
+		8447DA5D265435F4004E7B41 /* SettingsLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447DA5C265435F4004E7B41 /* SettingsLabelView.swift */; };
+		8447DA612654370A004E7B41 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447DA602654370A004E7B41 /* SettingsRowView.swift */; };
+		8447DA642654371B004E7B41 /* SourceLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447DA632654371B004E7B41 /* SourceLinkView.swift */; };
+		8447DA6726543A03004E7B41 /* ForEach+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447DA6626543A03004E7B41 /* ForEach+Extension.swift */; };
+		8447DA6C26543FD3004E7B41 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447DA6B26543FD3004E7B41 /* TextView.swift */; };
+		8447DA70265446D7004E7B41 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447DA6F265446D7004E7B41 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		842C0E85264AE72D00BC1890 /* SwiftUIApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		842C0E88264AE72D00BC1890 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		842C0E8A264AE72D00BC1890 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		842C0E8C264AE72D00BC1890 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		842C0E8E264AE73000BC1890 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		842C0E91264AE73000BC1890 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		842C0E94264AE73000BC1890 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,7 +42,16 @@
 		8440613B264F0BFD0002366B /* NetworkImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImageViewModel.swift; sourceTree = "<group>"; };
 		84406141264F0D960002366B /* UIScreen+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Extension.swift"; sourceTree = "<group>"; };
 		84406144264F0DDF0002366B /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
-		84406148264F0E1C0002366B /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		8447DA4D26542F62004E7B41 /* TvShowDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowDetailsView.swift; sourceTree = "<group>"; };
+		8447DA5226543034004E7B41 /* TvShowHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowHeaderView.swift; sourceTree = "<group>"; };
+		8447DA55265431C0004E7B41 /* TvShowRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowRowView.swift; sourceTree = "<group>"; };
+		8447DA58265433EF004E7B41 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		8447DA5C265435F4004E7B41 /* SettingsLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabelView.swift; sourceTree = "<group>"; };
+		8447DA602654370A004E7B41 /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
+		8447DA632654371B004E7B41 /* SourceLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceLinkView.swift; sourceTree = "<group>"; };
+		8447DA6626543A03004E7B41 /* ForEach+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ForEach+Extension.swift"; sourceTree = "<group>"; };
+		8447DA6B26543FD3004E7B41 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		8447DA6F265446D7004E7B41 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,15 +86,15 @@
 			children = (
 				842C0E88264AE72D00BC1890 /* AppDelegate.swift */,
 				842C0E8A264AE72D00BC1890 /* SceneDelegate.swift */,
-				84406133264F0AF40002366B /* Scenes */,
+				84406133264F0AF40002366B /* App */,
+				8447DA5126542FA8004E7B41 /* Views */,
 				84406135264F0B040002366B /* Model */,
 				84406136264F0B1D0002366B /* ViewModel */,
 				8440613F264F0D650002366B /* Extensions */,
 				84406140264F0D7B0002366B /* Helpers */,
-				84406147264F0E000002366B /* Custom Views */,
 				842C0E8E264AE73000BC1890 /* Assets.xcassets */,
-				842C0E93264AE73000BC1890 /* LaunchScreen.storyboard */,
 				842C0E96264AE73000BC1890 /* Info.plist */,
+				842C0E93264AE73000BC1890 /* LaunchScreen.storyboard */,
 				842C0E90264AE73000BC1890 /* Preview Content */,
 			);
 			path = SwiftUIApp;
@@ -92,12 +108,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		84406133264F0AF40002366B /* Scenes */ = {
+		84406133264F0AF40002366B /* App */ = {
 			isa = PBXGroup;
 			children = (
-				842C0E8C264AE72D00BC1890 /* MainView.swift */,
+				8447DA6F265446D7004E7B41 /* MainView.swift */,
+				8447DA4D26542F62004E7B41 /* TvShowDetailsView.swift */,
+				8447DA58265433EF004E7B41 /* SettingsView.swift */,
 			);
-			path = Scenes;
+			path = App;
 			sourceTree = "<group>";
 		};
 		84406135264F0B040002366B /* Model */ = {
@@ -122,6 +140,7 @@
 			children = (
 				84406141264F0D960002366B /* UIScreen+Extension.swift */,
 				84406144264F0DDF0002366B /* String+Extension.swift */,
+				8447DA6626543A03004E7B41 /* ForEach+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -133,12 +152,17 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		84406147264F0E000002366B /* Custom Views */ = {
+		8447DA5126542FA8004E7B41 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				84406148264F0E1C0002366B /* TextView.swift */,
+				8447DA5226543034004E7B41 /* TvShowHeaderView.swift */,
+				8447DA55265431C0004E7B41 /* TvShowRowView.swift */,
+				8447DA5C265435F4004E7B41 /* SettingsLabelView.swift */,
+				8447DA602654370A004E7B41 /* SettingsRowView.swift */,
+				8447DA632654371B004E7B41 /* SourceLinkView.swift */,
+				8447DA6B26543FD3004E7B41 /* TextView.swift */,
 			);
-			path = "Custom Views";
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,15 +235,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8447DA56265431C0004E7B41 /* TvShowRowView.swift in Sources */,
 				84406145264F0DDF0002366B /* String+Extension.swift in Sources */,
+				8447DA6726543A03004E7B41 /* ForEach+Extension.swift in Sources */,
+				8447DA612654370A004E7B41 /* SettingsRowView.swift in Sources */,
 				84406139264F0BCD0002366B /* ListViewModel.swift in Sources */,
 				842C0EA9264C40F700BC1890 /* TvShowModel.swift in Sources */,
+				8447DA5326543034004E7B41 /* TvShowHeaderView.swift in Sources */,
 				8440613C264F0BFD0002366B /* NetworkImageViewModel.swift in Sources */,
 				842C0E89264AE72D00BC1890 /* AppDelegate.swift in Sources */,
+				8447DA4E26542F62004E7B41 /* TvShowDetailsView.swift in Sources */,
+				8447DA642654371B004E7B41 /* SourceLinkView.swift in Sources */,
+				8447DA70265446D7004E7B41 /* MainView.swift in Sources */,
+				8447DA6C26543FD3004E7B41 /* TextView.swift in Sources */,
 				842C0E8B264AE72D00BC1890 /* SceneDelegate.swift in Sources */,
-				84406149264F0E1C0002366B /* TextView.swift in Sources */,
-				842C0E8D264AE72D00BC1890 /* MainView.swift in Sources */,
+				8447DA5D265435F4004E7B41 /* SettingsLabelView.swift in Sources */,
 				84406142264F0D960002366B /* UIScreen+Extension.swift in Sources */,
+				8447DA59265433EF004E7B41 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +394,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUIApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -382,6 +415,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUIApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
