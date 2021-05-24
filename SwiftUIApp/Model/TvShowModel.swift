@@ -20,11 +20,10 @@ struct TvShowModel: Codable, Equatable, Hashable, Identifiable {
     var status: String
     var runtime: Int?
     var premiered: String
-    var imbd: String?
     var image: Images
     var summary: String
     
-    init(id: Int = 0, url: String = "", name: String = "", language: String = "", genres: [String] =  [""], status: String = "", runtime: Int? = 0, premiered: String = "", imbd: String? = "", image: Images, summary: String = ""){
+    init(id: Int = 0, url: String = "", name: String = "", language: String = "", genres: [String] =  [""], status: String = "", runtime: Int? = 0, premiered: String = "", image: Images, summary: String = ""){
             
         self.id = id
         self.url = url
@@ -34,7 +33,6 @@ struct TvShowModel: Codable, Equatable, Hashable, Identifiable {
         self.status = status
         self.runtime = runtime
         self.premiered = premiered
-        self.imbd = imbd
         self.image = image
         self.summary = summary
     }

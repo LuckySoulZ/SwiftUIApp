@@ -18,13 +18,10 @@ struct TvShowHeaderView: View {
 
   var body: some View {
     ZStack {
-      LinearGradient(gradient: Gradient(colors: [.white, .black]), startPoint: .topLeading, endPoint: .bottomTrailing)
-      
-        NetworkImageView(imageUrl: tvshow.image.original)
+        NetworkImageView(imageUrl: tvshow.image.medium)
         .padding(.vertical, 20)
-        .scaleEffect(isAnimatingImage ? 1.0 : 0.6)
-        
-    } //: ZSTACK
+        .scaleEffect(isAnimatingImage ? 1.0 : 0.6)        
+    }
     .frame(height: 440)
     .onAppear() {
       withAnimation(.easeOut(duration: 0.5)) {

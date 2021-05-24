@@ -11,7 +11,7 @@ struct SettingsView: View {
   // MARK: - PROPERTIES
   
   @Environment(\.presentationMode) var presentationMode
-  @AppStorage("isDarkMode") var isDarkMode: Bool = false
+  @AppStorage("isLightMode") var isLightMode: Bool = false
   
   // MARK: - BODY
   var body: some View {
@@ -46,20 +46,20 @@ struct SettingsView: View {
           ) {
             Divider().padding(.vertical, 4)
             
-            Text("Do you wish to change to dark mode?.")
+            Text("Do you wish to change to light mode?.")
               .padding(.vertical, 8)
               .frame(minHeight: 60)
               .layoutPriority(1)
               .font(.footnote)
               .multilineTextAlignment(.leading)
             
-            Toggle(isOn: $isDarkMode) {
-              if isDarkMode {
-                Text("Dark Mode On".uppercased())
+            Toggle(isOn: $isLightMode) {
+              if isLightMode {
+                Text("Light Mode On".uppercased())
                   .fontWeight(.bold)
                   .foregroundColor(Color.green)
               } else {
-                Text("Dark Mode Off".uppercased())
+                Text("Light Mode Off".uppercased())
                   .fontWeight(.bold)
                   .foregroundColor(Color.secondary)
               }
@@ -78,10 +78,9 @@ struct SettingsView: View {
             SettingsLabelView(labelText: "Application", labelImage: "apps.iphone")
           ) {
             SettingsRowView(name: "Developer", content: "Luis Zatarain")
-            SettingsRowView(name: "Compatibility", content: "iOS 14")
+            SettingsRowView(name: "Compatibility", content: "IOS 14")
             SettingsRowView(name: "SwiftUI", content: "2.0")
           }
-          
         }
         .navigationBarTitle(Text("Settings"), displayMode: .large)
         .navigationBarItems(

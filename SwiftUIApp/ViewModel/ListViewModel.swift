@@ -14,11 +14,11 @@ import Foundation
 */
 
 final class ListViewModel: ObservableObject {
+    @Published var modelList = [TvShowModel]()
+    
     init() {
         fetchShows()
     }
-   
-    @Published var modelList = [TvShowModel]()
    
     private func fetchShows() {
         guard let url = URL(string:"http://api.tvmaze.com/shows") else { return }
