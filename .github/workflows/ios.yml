@@ -15,12 +15,12 @@ jobs:
         
       - name: Install Dependencies
         run: |
-          cd MovieAppz
+          cd SwiftUIApp
           pod install --repo-update
         shell: bash
       
       - name: Build
         run: |
-          xcodebuild clean build -project MovieAppz.xcodeproj -scheme MovieAppz -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+          xcodebuild clean build -project SwiftUIApp.xcodeproj -scheme SwiftUIApp -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
         env: 
          destination: ${{ matrix.destination }}
